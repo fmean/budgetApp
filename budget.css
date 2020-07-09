@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 50px;
+}
+
+#incomeForm, #expenseForm {
+    border-style: solid;
+    border-color: green;
+    padding: 4%;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+#expenseName, #expenseValue, #expenseIcons {
+    width: 20%;
+}
+
+#divForTotalIncome, #divForTotalCosts, #divForOutcome {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#incomeFormAndWallet, #expenseFormAndTable, #walletTable {
+    display: flex;
+    flex-direction: row;
+}
+
+#divForExpenseForm, #divForIncomeForm {
+    width: 40%;
+}
+
+#expenseTable, #walletTable {
+    width: 60%;
+}
+
+#walletTable {
+    justify-content: space-between;
+}
+
+#editButton, #deleteButton {
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#inputForIncomeValue, #inputForExpenseName, #inputForExpenseValue {
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#inputForIncomeValue {
+    border-color: green;
+    width: 95%;
+    height: 40px;
+}
+
+#inputForExpenseName {
+    margin-bottom: 20px;
+    width: 95%;
+    height: 40px;
+}
+
+#inputForExpenseValue {
+    width: 95%;
+    height: 40px;
+}
+
+#inputForExpenseName, #inputForExpenseValue, #expenseForm, #addExpenseButton{
+    border-color: red;
+}
+
+#calculateButton, #addExpenseButton {
+    border-style: solid;
+    border-color: green;
+    color: green;
+    border-radius: 5px;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+}
+
+#addExpenseButton, #costParagraph, p {
+    color: red;
+    border-color: red;
+}
+
+#costParagraph, #paragprah10, #outcomeParagraph, p {
+    font-weight: bold;
+}
+
+#incomeParagraph {
+    color: green;
+    font-size: 40px;
+}
+
+#outcomeParagraph {
+    color: black;
+    font-size: 40px;
+}
+
+#costParagraph {
+    font-size: 40px;
+}
+
+#tableColumnHeaders, .expenseLinesDivisionClass, .buttonsDivisionClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.expenseLinesDivisionClass {
+    align-items: center;
+}
+
+#tableColumnHeaders h2, .ff1, p, .buttonsDivisionClass {
+    width: 33%;
+    text-align: center;
+}
+
+.buttonsDivisionClass {
+    justify-content: center;
+}

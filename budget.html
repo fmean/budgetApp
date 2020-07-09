@@ -1,0 +1,91 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="budget.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <title>BUDGET APP</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <script src="budget.js"></script>
+
+        <div>
+            <header">
+                <h1>BUDGET APP</h1>
+            </header>
+        </div>
+
+        <div id="incomeFormAndWallet">
+
+            <div id="divForIncomeForm">
+
+                <form id="incomeForm">
+                    <label><strong>Please Enter Your Budget</strong></label>
+                    <br>
+                    <input id="inputForIncomeValue" type="number"></input>
+                    <br>
+                    <br>
+                    <button id="calculateButton" onclick="calculate(event)">Calculate</button>
+                </form>
+            </div>
+			<div id="walletTable">
+            <div id="divForTotalIncome">
+                <h2>BUDGET</h2>
+                <img src="https://img.icons8.com/dusk/64/000000/money.png"/>
+				<p id="incomeParagraph">0</p>
+            </div>
+
+            <div id="divForTotalCosts">
+                <h2>EXPENSES</h2>
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/transaction-list--v1.png"/>
+				<p id="costParagraph">0</p>
+            </div>
+
+            <div id="divForOutcome">
+                <h2>BALANCE</h2>
+                <img src="https://img.icons8.com/cotton/64/000000/dollar-account.png"/>
+				<p id="outcomeParagraph">0</p>
+            </div>
+        </div>
+
+        </div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+        <div id="expenseFormAndTable">
+
+            <div id="divForExpenseForm">
+                <form id="expenseForm">
+                    <label><strong>Enter Your Expense</strong></label>
+                    <br>
+                    <input id="inputForExpenseName" type="text"></input>
+                    <br>
+                    <label><strong>Please Enter Expense Amount</strong></label>
+					<br>
+                    <input id="inputForExpenseValue" type="number"></input>
+                    <br>
+					<br>
+                    <button id="addExpenseButton" onclick="addExpense(event)">Add Expense</button>
+                </form>
+            </div>
+
+            <div id="expenseTable">
+                <div id="tableColumnHeaders">
+                    <h2 id="expenseName">Expense Title</h2>
+                    <h2 id="expenseValue">Expense Value</h2>
+                    <h2 id="expenseIcons"></h2>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
